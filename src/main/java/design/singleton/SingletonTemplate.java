@@ -1,17 +1,17 @@
 package design.singleton;
 
 // final pe clasa
-public class SingletonExample {
+public class SingletonTemplate {
 
     // PAS 1 : constructor privat
-    private SingletonExample() {
+    private SingletonTemplate() {
     }
 
     // PAS 2 : 1 singur object 'immutable' pentru toata aplicatia
-    private static final SingletonExample instanta = new SingletonExample();
+    private static final SingletonTemplate instanta = new SingletonTemplate();
 
     // PAS 3 : 1 singur mod de acces al singurei instante
-    public static SingletonExample getInstance() {
+    public static SingletonTemplate getInstance() {
         return instanta;
     }
 
